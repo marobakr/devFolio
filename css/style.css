@@ -1,0 +1,343 @@
+/* Start Global */
+:root {
+  --main-bg: #f7f7f7;
+  --alt-color: #4e4e4e;
+  --main-color: #1e1e1e;
+  --secondry-color: #0078ff;
+  /* Font Family */
+  --defult-family: Roboto, system-ui, -apple-system, 'Segoe UI',
+    'Helvetica Neue', Arial, 'Noto Sans', 'Liberation Sans', sans-serif,
+    'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+}
+
+* {
+  text-transform: capitalize;
+}
+.main-heading h3 {
+  font-size: 3.2rem;
+  color: var(--main-color);
+}
+.main-heading p {
+  color: var(--alt-color);
+  line-height: 24px;
+}
+.main-heading p::before {
+  position: absolute;
+  content: '';
+  bottom: -15px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 5%;
+  height: 5px;
+  background-color: var(--secondry-color);
+}
+.main-padding {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+.mainColorTitle {
+  color: var(--main-color);
+}
+.altColorTitle {
+  color: var(--alt-color);
+}
+.overlay {
+  z-index: -1;
+}
+h5.label-heading::before {
+  content: '';
+  position: absolute;
+  bottom: -15px;
+  left: 0;
+  width: 20%;
+  right: 0;
+  background-color: var(--secondry-color);
+  height: 4px;
+}
+
+.testimonials,
+.form {
+  background-image: url('/images/overlay-bg.jpg');
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.testimonials {
+  height: 60vh;
+}
+.overlay {
+  background-color: var(--secondry-color);
+  opacity: 0.7;
+}
+
+/* End Global */
+
+/* Start Navbar */
+nav .nav-link {
+  color: white;
+}
+nav ul a {
+  letter-spacing: 0.1rem;
+  font-family: var(--defult-family);
+  position: relative;
+  padding-right: 5px;
+}
+nav ul a::before {
+  content: '';
+  position: absolute;
+  width: 0%;
+  left: 0;
+  right: 0;
+  height: 2px;
+  bottom: -5px;
+  background-color: white;
+  transition: all 0.5s;
+  margin: auto;
+  visibility: hidden;
+}
+@media (min-width: 992px) {
+  nav ul a:hover::before {
+    visibility: visible;
+    width: 80%;
+  }
+  .active::before {
+    visibility: visible;
+    width: 80%;
+  }
+}
+nav nav .navbar a:hover,
+.navbar .active,
+.navbar .active:focus {
+  color: white;
+}
+nav .ul-list-inner {
+  display: none;
+  left: 100%;
+  top: 0;
+}
+@media (max-width: 991px) {
+  nav .ul-list-inner {
+    left: 35%;
+    bottom: 20%;
+    height: fit-content;
+  }
+}
+.parent-li:hover .ul-list-inner {
+  display: block;
+}
+.dropdown-item:focus,
+.dropdown-item:hover {
+  background-color: var(--secondry-color);
+  color: RGB(78, 78, 78);
+}
+.dropdown-item:hover {
+  color: white;
+} /* End Navbar */
+
+/* Start Headr */
+section#home {
+  background-image: url('/images/hero-bg.jpg');
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+section#home .overlay {
+  background-color: rgba(0, 0, 0, 0.6);
+}
+section#home h1 {
+  font-size: 5rem;
+}
+
+section#home .typeText::after {
+  content: '|';
+  animation: blink 1s step-end infinite;
+  animation: none;
+}
+
+section#home .showAnim.typeText::after {
+  animation: blink 1s step-end infinite;
+}
+
+@keyframes blink {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+@media (max-width: 800px) {
+  section#home h1 {
+    font-size: 3.5rem;
+  }
+}
+/* End Headr */
+/* Start About */
+
+/* End About */
+
+/* Start Services */
+.services {
+  background-color: var(--main-bg);
+}
+.services .row .icons {
+  width: 120px;
+  height: 120px;
+  border: 10px solid;
+  border-color: var(--secondry-color);
+  background-color: #fff;
+  color: var(--main-color);
+  transition: all 0.2s ease-in;
+}
+
+.services .row .item-bg:hover .icons {
+  background-color: var(--secondry-color);
+  box-shadow: 0 0 0 10px #cde1f8;
+  color: #fff;
+}
+/* End Services */
+/* Start Counter */
+.counter {
+  height: 60vh;
+  position: relative;
+  background-image: url('/images/counters-bg.jpg');
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+@media (max-width: 767px) {
+  .counter {
+    height: auto;
+  }
+}
+.counter .overlay {
+  background-color: var(--secondry-color);
+  opacity: 0.7;
+}
+.icons-counter {
+  width: 100px;
+  height: 100px;
+  border: 10px solid #fff;
+}
+/* End Counter */
+/* Start Portfolio */
+.Portfolio img {
+  transition: all 1s 0.2s ease-in;
+}
+.Portfolio .bg-item:hover img {
+  transform: scale(1.5);
+}
+.Portfolio .row .icon {
+  width: 50px;
+  height: 50px;
+  border: 4px solid;
+}
+.Portfolio .row .foot h5 {
+  color: var(--main-color);
+}
+.Portfolio .row .foot p {
+  font-size: 1rem;
+}
+.Portfolio .row .foot p {
+  color: var(--main-color);
+  font-size: 0.9rem;
+}
+/* End Portfolio */
+
+/* Start Testimonials  */
+
+.testimonials
+  .swiper-horizontal
+  > .swiper-pagination-bullets
+  .swiper-pagination-bullet,
+.swiper-pagination-horizontal.swiper-pagination-bullets
+  .swiper-pagination-bullet {
+  background-color: #fff;
+  padding: 10px;
+}
+
+/* Start Swiper */
+.autoplay-progress {
+  position: absolute;
+  right: 16px;
+  bottom: 16px;
+  z-index: 10;
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  color: white;
+}
+
+.autoplay-progress svg {
+  --progress: 0;
+  position: absolute;
+  left: 0;
+  top: 0px;
+  z-index: 10;
+  width: 100%;
+  height: 100%;
+  stroke-width: 4px;
+  stroke: white;
+  fill: none;
+  stroke-dashoffset: calc(125.6 * (1 - var(--progress)));
+  stroke-dasharray: 125.6;
+  transform: rotate(-90deg);
+}
+/* End Swiper */
+
+/* End Testimonials  */
+/* Start Blog */
+.blog {
+  background-color: #f5f5f5;
+  padding-bottom: 100px;
+}
+.blog .row button {
+  transform: translate(-50%,55%);
+}
+.blog .row .info h3 a {
+  color: var(--main-color);
+  transition: all 0.5s;
+}
+.blog .row .info h3:hover a {
+  color: var(--secondry-color);
+}
+.blog .row .info p {
+  color: var(--alt-color);
+  font-size: 1.05rem;
+  line-height: 1.65;
+}
+.blog .row figure img {
+  width: 10%;
+}
+.blog .row figcaption {
+  color: var(--main-color);
+}
+.blog .row .time {
+  color: var(--alt-color);
+}
+/* End Blog */
+/* Start Form */
+
+.form .socialmedia .inner {
+  padding: 10px;
+  border: 3px solid;
+  border-color: var(--secondry-color);
+  background-color: #fff;
+  color: var(--main-color);
+  transition: all 0.2s ease-in;
+}
+.form .socialmedia .inner:hover {
+  background-color: var(--secondry-color);
+  box-shadow: 0 0 0 7px #cde1f8;
+  color: #fff;
+}
+/* End Form */
+/* Start Footer */
+footer {
+  background-color: #0062D3;
+}
+/* End Footer */
