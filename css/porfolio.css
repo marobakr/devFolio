@@ -1,13 +1,13 @@
 /* Start Headr */
 nav {
- z-index: 99999;
+  z-index: 99999;
 }
 
-.portfolio-details {
- background-image: url('../images/overlay-bg.jpg');
- background-position:right;
- background-size: cover;
- background-attachment: fixed;
+.pages-details {
+  background-image: url('../images/overlay-bg.jpg');
+  background-position: right;
+  background-size: cover;
+  background-attachment: fixed;
   height: 50vh;
 }
 /* End Headr */
@@ -17,7 +17,6 @@ nav {
   border-bottom: 1px solid #dee2e6;
 }
 .content-portfolio .item {
- z-index: -1;
+  z-index: -1;
 }
 /* End Content Portfolio */
-
