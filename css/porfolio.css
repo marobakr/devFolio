@@ -1,0 +1,23 @@
+/* Start Headr */
+nav {
+ z-index: 99999;
+}
+
+.portfolio-details {
+ background-image: url('../images/overlay-bg.jpg');
+ background-position:right;
+ background-size: cover;
+ background-attachment: fixed;
+  height: 50vh;
+}
+/* End Headr */
+/* Start Content Portfolio */
+
+.content-portfolio .inner-portfolio h3 {
+  border-bottom: 1px solid #dee2e6;
+}
+.content-portfolio .item {
+ z-index: -1;
+}
+/* End Content Portfolio */
+

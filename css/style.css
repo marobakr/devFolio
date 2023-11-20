@@ -13,9 +13,6 @@
 * {
   text-transform: capitalize;
 }
-.container {
-  overflow: hidden;
-}
 .main-heading h3 {
   font-size: 3.2rem;
   color: var(--main-color);
@@ -138,26 +135,185 @@ nav .ul-list-inner {
 } /* End Navbar */
 
 /* Start Headr */
-section#home {
+#home {
   background-image: url('/images/hero-bg.jpg');
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
 }
-section#home .overlay {
+#home .overlay {
   background-color: rgba(0, 0, 0, 0.6);
 }
-section#home h1 {
+#mainHeading {
   font-size: 5rem;
+  position: relative;
+}
+@media (max-width: 500px) {
+  #mainHeading {
+    font-size: 2rem;
+  }
 }
 
+#home p:before {
+  content: '|';
+  animation: typing 5s infinite;
+}
+@keyframes typing {
+  0% {
+    content: 's |';
+  }
+  3% {
+    content: 'so |';
+  }
+  5% {
+    content: 'sof |';
+  }
+  7% {
+    content: 'soft |';
+  }
+  9% {
+    content: 'softw |';
+  }
+  11% {
+    content: 'softwa |';
+  }
+  13% {
+    content: 'softwar |';
+  }
+  15% {
+    content: 'software |';
+  }
+  17% {
+    content: 'softwar |';
+  }
+  20% {
+    content: 'softwa |';
+  }
+  22% {
+    content: 'softw |';
+  }
+  24% {
+    content: 'soft |';
+  }
+  26% {
+    content: 'sof |';
+  }
+  28% {
+    content: 'so |';
+  }
+  30% {
+    content: 's |';
+  }
+  32% {
+    content: 'e |';
+  }
+  34% {
+    content: 'en |';
+  }
+  36% {
+    content: 'eng |';
+  }
+  38% {
+    content: 'engi |';
+  }
+  40% {
+    content: 'engin |';
+  }
+  42% {
+    content: 'engine |';
+  }
+  44% {
+    content: 'enginee |';
+  }
+  46% {
+    content: 'engineer |';
+  }
+  46% {
+    content: 'engineer';
+  }
+  48% {
+    content: 'engine |';
+  }
+  50% {
+    content: 'engin |';
+  }
+  55% {
+    content: 'engi |';
+  }
+  57% {
+    content: 'eng |';
+  }
+  58% {
+    content: 'en |';
+  }
+  60% {
+    content: 'e |';
+  }
+  62% {
+    content: 'F |';
+  }
+  64% {
+    content: 'Fr |';
+  }
+  68% {
+    content: 'Fre |';
+  }
+  70% {
+    content: 'Free |';
+  }
+  72% {
+    content: 'Freel |';
+  }
+  74% {
+    content: 'Freela |';
+  }
+  76% {
+    content: 'Freelan |';
+  }
+  78% {
+    content: 'Freelanc |';
+  }
+  80% {
+    content: 'Freelance |';
+  }
+  82% {
+    content: 'Freelancer |';
+  }
+  84% {
+    content: 'Freelancer |';
+  }
+  86% {
+    content: 'Freelanc |';
+  }
+  88% {
+    content: 'Freelan |';
+  }
+  90% {
+    content: 'Freela |';
+  }
+  92% {
+    content: 'Freel |';
+  }
+  94% {
+    content: 'Free |';
+  }
+  96% {
+    content: 'Fre |';
+  }
+  98% {
+    content: 'Fr |';
+  }
+  100% {
+    content: 'F |';
+  }
+}
 section#home .typeText::after {
   content: '|';
   animation: blink 1s step-end infinite;
   animation: none;
 }
 
-section#home .showAnim.typeText::after {
+#home .showAnim.typeText::after {
   animation: blink 1s step-end infinite;
 }
 
@@ -338,6 +494,14 @@ section#home .showAnim.typeText::after {
   box-shadow: 0 0 0 7px #cde1f8;
   color: #fff;
 }
+.form-floating > .textareaResize {
+  height: calc(9rem + calc(var(--bs-border-width) * 2)) !important;
+}
+@media (max-width: 700px) {
+  form .sumbitMassge {
+    width: 100%;
+  }
+}
 /* End Form */
 /* Start Footer */
 footer {
@@ -358,3 +522,11 @@ button.scrollToTopBtn {
   color: white;
   border: none;
 }
+
+/* 
+- watch mennisy 
+- watch noorhan
+elzro bootstrap container
+- single page blg and image
+write of your docs
+*/
