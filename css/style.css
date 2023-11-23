@@ -307,10 +307,7 @@ nav .ul-list-inner {
     content: 'F |';
   }
 }
-section#home .typeText::after {
-  content: '|';
-  animation: blink 1s step-end infinite;
-}
+
 
 
 
