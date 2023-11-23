@@ -310,12 +310,9 @@ nav .ul-list-inner {
 section#home .typeText::after {
   content: '|';
   animation: blink 1s step-end infinite;
-  animation: none;
 }
 
-#home .showAnim.typeText::after {
-  animation: blink 1s step-end infinite;
-}
+
 
 @keyframes blink {
   0%,
@@ -522,11 +519,10 @@ button.scrollToTopBtn {
   color: white;
   border: none;
 }
-
 /* 
-- watch mennisy 
+- watch mennisy  
 - watch noorhan
-elzro bootstrap container
-- single page blg and image
 write of your docs
 */
+/* align-self for child  and align items for parent */
+/* 106483203 */
