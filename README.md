@@ -19,10 +19,6 @@ Devfolio is a modern and professional portfolio website template tailored for de
 - HTML
 - CSS
 - Bootstrap
+- JavaScript
 
-## Usage
-
-Feel free to explore the codebase to understand the implementation details and customize it according to your preferences and portfolio needs. Whether you're a developer looking to showcase your projects or a designer seeking inspiration for your portfolio website, Devfolio provides a solid foundation to create an impressive online presence.
-
-## License
 
